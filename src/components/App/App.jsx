@@ -4,7 +4,6 @@ import { lazy } from "react";
 
 const Home = lazy(() => import("../HomePage/Home"));
 const Tweets = lazy(() => import("../Tweets/Tweets"));
-const NotFound = lazy(() => import("../NotFound/NotFound"));
 
 export const App = () => {
   return (
@@ -12,7 +11,7 @@ export const App = () => {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/tweets" element={<Tweets />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Home />} />
       </Route>
     </Routes>
   );
