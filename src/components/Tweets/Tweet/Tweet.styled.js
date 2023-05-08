@@ -16,5 +16,4 @@ export const TweetCard = styled.div`
   );
   box-shadow: -2.5776965618133545px 6.873857021331787px 20.621572494506836px 0px
     #0000003b;
-  /*background-image: url("../../../images/background.jpg");*/
 `;
