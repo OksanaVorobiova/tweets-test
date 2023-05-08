@@ -1,4 +1,4 @@
-##Tweets
+# Tweets
 
 A simple React App, which uses back-end created with <a href="https://mockapi.io/">mockapi.io</a>
 React Router is applied, so you can view two pages: Home and Tweets. It`s just a greeting at a Home page, while<br>
