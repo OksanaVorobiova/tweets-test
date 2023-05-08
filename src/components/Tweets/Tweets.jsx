@@ -103,7 +103,19 @@ export default function Tweets() {
       </TweetsSection>
     );
   } else if (status === STATUS.REJECTED) {
-    return <p>Error</p>;
+    return (
+      <TweetsSection>
+        <BackBtn to={backRef.current}>Back</BackBtn>
+        <p>Error</p>
+      </TweetsSection>
+    );
+  } else if (status === STATUS.IDLE) {
+    return (
+      <TweetsSection>
+        <BackBtn to={backRef.current}>Back</BackBtn>
+        <p>No tweets :(</p>
+      </TweetsSection>
+    );
   } else if (status === STATUS.RESOLVED) {
     return (
       <TweetsSection>
